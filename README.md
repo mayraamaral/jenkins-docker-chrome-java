@@ -8,8 +8,16 @@
 
 # Usage
 
+## Default image
+
 ```
-docker run -p 8080:8080 -p 50000:50000 --restart=on-failure mayraamaral/jenkins-docker-chrome-java:node
+docker run -p 8080:8080 -p 50000:50000 --restart=on-failure mayraamaral/jenkins-docker-chrome-java:latest
+```
+
+## Image with Nodejs installed
+
+```
+docker run -p 8080:8080 -p 50000:50000 --restart=on-failure mayraamaral/jenkins-docker-chrome-java:latest
 ```
 
 NOTE: this is only a fork, the original repository is from [official jenkins](https://github.com/jenkinsci/docker)
