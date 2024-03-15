@@ -1,4 +1,4 @@
-# Official Jenkins Docker image
+# Jenkins Docker image with Chrome and Java
 
 [![Docker Stars](https://img.shields.io/docker/stars/jenkins/jenkins.svg)](https://hub.docker.com/r/jenkins/jenkins/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/jenkins/jenkins.svg)](https://hub.docker.com/r/jenkins/jenkins/)
@@ -10,14 +10,18 @@
 
 ## Default image
 
-```
-docker run -p 8080:8080 -p 50000:50000 --restart=on-failure mayraamaral/jenkins-docker-chrome-java:latest
+```shell
+docker run -p 8080:8080 -p 50000:50000 \
+--restart=on-failure \
+mayraamaral/jenkins-docker-chrome-java:latest
 ```
 
 ## Image with Nodejs installed
 
-```
-docker run -p 8080:8080 -p 50000:50000 --restart=on-failure mayraamaral/jenkins-docker-chrome-java:latest
+```shell
+docker run -p 8080:8080 -p 50000:50000 \
+--restart=on-failure \
+mayraamaral/jenkins-docker-chrome-java:node
 ```
 
 NOTE: this is only a fork, the original repository is from [official jenkins](https://github.com/jenkinsci/docker)
